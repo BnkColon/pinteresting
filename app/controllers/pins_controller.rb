@@ -20,6 +20,7 @@ class PinsController < ApplicationController
   def create
     @pin = current_user.pins.build(pin_params)
     if @pin.save
+      validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
       redirect_to @pin, notice: 'Pin was successfully created.'
     else
       render :new
