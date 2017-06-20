@@ -39,8 +39,15 @@ gem 'jquery-rails'
 
 # user authentication gems for Rails
 gem 'devise'
+
+#
 gem 'paperclip', '~> 4.2'
+
+# To save images in Amazon S3 for Heroku
 gem 'aws-sdk', '< 2.0'
+
+# 
+gem 'masonry-rails', '~> 0.2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
