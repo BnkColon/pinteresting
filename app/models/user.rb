@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_many :pins
 
+  validates :name, presence: true
+
 # Add secure passwords  
 #  validates :password, :presence => true,
 #            :on => :create,
