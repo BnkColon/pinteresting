@@ -41,7 +41,7 @@ gem 'jquery-rails'
 gem 'devise'
 
 #
-gem 'paperclip', '~> 4.2'
+gem 'paperclip', '~> 5.2.0'
 
 # To save images in Amazon S3 for Heroku
 gem 'aws-sdk', '< 2.0'
